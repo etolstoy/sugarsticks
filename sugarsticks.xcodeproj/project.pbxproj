@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F4BF0C31DF747A000FD4CD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BF0C21DF747A000FD4CD6 /* ViewController.swift */; };
 		9F4BF0C61DF747A000FD4CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BF0C41DF747A000FD4CD6 /* Main.storyboard */; };
 		9F4BF0CB1DF747A000FD4CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BF0CA1DF747A000FD4CD6 /* Assets.xcassets */; };
 		9F4BF0CE1DF747A000FD4CD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BF0CC1DF747A000FD4CD6 /* LaunchScreen.storyboard */; };
 		9FE733B31E2CD0D2000CE7CC /* Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE733B21E2CD0D2000CE7CC /* Sugar.swift */; };
 		9FE733B91E2CDEF9000CE7CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE733B61E2CDEF9000CE7CC /* AppDelegate.swift */; };
 		9FE733BB1E2CDF02000CE7CC /* RealmFixtureCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE733BA1E2CDF02000CE7CC /* RealmFixtureCreator.swift */; };
+		9FE733BF1E2CE208000CE7CC /* SugarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE733BE1E2CE208000CE7CC /* SugarListViewController.swift */; };
+		9FE733C11E2CE367000CE7CC /* SugarInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE733C01E2CE367000CE7CC /* SugarInfoTableViewCell.swift */; };
 		A2BA5D87D26EB92AFD62BA2E /* Pods_sugarsticks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F733D13767D20A57B4ACB /* Pods_sugarsticks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		405FEA6CC2FCB2D1CC5FA801 /* Pods-sugarsticks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sugarsticks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sugarsticks/Pods-sugarsticks.debug.xcconfig"; sourceTree = "<group>"; };
 		9F4BF0BD1DF747A000FD4CD6 /* sugarsticks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sugarsticks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F4BF0C21DF747A000FD4CD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F4BF0C51DF747A000FD4CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F4BF0CA1DF747A000FD4CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4BF0CD1DF747A000FD4CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +28,8 @@
 		9FE733B21E2CD0D2000CE7CC /* Sugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sugar.swift; sourceTree = "<group>"; };
 		9FE733B61E2CDEF9000CE7CC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE733BA1E2CDF02000CE7CC /* RealmFixtureCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmFixtureCreator.swift; sourceTree = "<group>"; };
+		9FE733BE1E2CE208000CE7CC /* SugarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SugarListViewController.swift; sourceTree = "<group>"; };
+		9FE733C01E2CE367000CE7CC /* SugarInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SugarInfoTableViewCell.swift; sourceTree = "<group>"; };
 		B73F733D13767D20A57B4ACB /* Pods_sugarsticks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sugarsticks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E385E8DC0469FC9DA0D9CDCC /* Pods-sugarsticks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sugarsticks.release.xcconfig"; path = "Pods/Target Support Files/Pods-sugarsticks/Pods-sugarsticks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,9 +75,10 @@
 		9F4BF0BF1DF747A000FD4CD6 /* sugarsticks */ = {
 			isa = PBXGroup;
 			children = (
+				9FE733C21E2CE4B8000CE7CC /* Resources */,
+				9FE733BC1E2CE1F3000CE7CC /* PresentationLayer */,
 				9FE733B41E2CDEF9000CE7CC /* ApplicationLayer */,
 				9FE733B01E2CD0C1000CE7CC /* Models */,
-				9F4BF0C21DF747A000FD4CD6 /* ViewController.swift */,
 				9F4BF0C41DF747A000FD4CD6 /* Main.storyboard */,
 				9F4BF0CA1DF747A000FD4CD6 /* Assets.xcassets */,
 				9F4BF0CC1DF747A000FD4CD6 /* LaunchScreen.storyboard */,
@@ -131,6 +134,38 @@
 				9FE733BA1E2CDF02000CE7CC /* RealmFixtureCreator.swift */,
 			);
 			path = RealmFixtureCreator;
+			sourceTree = "<group>";
+		};
+		9FE733BC1E2CE1F3000CE7CC /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9FE733BD1E2CE1F3000CE7CC /* SugarListModule */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		9FE733BD1E2CE1F3000CE7CC /* SugarListModule */ = {
+			isa = PBXGroup;
+			children = (
+				9FE733BE1E2CE208000CE7CC /* SugarListViewController.swift */,
+				9FE733C01E2CE367000CE7CC /* SugarInfoTableViewCell.swift */,
+			);
+			path = SugarListModule;
+			sourceTree = "<group>";
+		};
+		9FE733C21E2CE4B8000CE7CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FE733C31E2CE4B8000CE7CC /* Fixtures */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9FE733C31E2CE4B8000CE7CC /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 		D0FDB899EF9B0919C094CD6A /* Pods */ = {
@@ -267,8 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE733BB1E2CDF02000CE7CC /* RealmFixtureCreator.swift in Sources */,
+				9FE733BF1E2CE208000CE7CC /* SugarListViewController.swift in Sources */,
 				9FE733B91E2CDEF9000CE7CC /* AppDelegate.swift in Sources */,
-				9F4BF0C31DF747A000FD4CD6 /* ViewController.swift in Sources */,
+				9FE733C11E2CE367000CE7CC /* SugarInfoTableViewCell.swift in Sources */,
 				9FE733B31E2CD0D2000CE7CC /* Sugar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,7 @@ class RealmFixtureCreator: Object {
     let sugarNames = ["McDonalds", "KFC", "Аэрофлот", "Трансаэро", "Теремок 1", "Теремок 2"]
     let sugarCountries = ["Россия", "США", "Германия", "Польша", "Эстония", "Чехия"]
     let donators = ["Егор", "Дмитрий", "Владимир"]
+    let images = ["csr", "davidoff", "kenco", "nescafe"]
     
     func prefillRealm() {
         let realm = try! Realm()
@@ -30,6 +31,7 @@ class RealmFixtureCreator: Object {
         sugar.country = randomSugarCountry()
         sugar.donator = randomDonator()
         sugar.collectedAt = Date.init()
+        sugar.photoImageName = randomImageName()
         return sugar
     }
     
@@ -43,6 +45,10 @@ class RealmFixtureCreator: Object {
     
     func randomDonator() -> String {
         return randomElementFrom(array: donators)
+    }
+    
+    func randomImageName() -> String {
+        return randomElementFrom(array: images)
     }
     
     func randomElementFrom(array: Array<String>) -> String {

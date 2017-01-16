@@ -12,5 +12,6 @@ class Sugar: Object {
     dynamic var name = ""
     dynamic var country = ""
     dynamic var donator = ""
+    dynamic var photoImageName = ""
     dynamic var collectedAt = Date(timeIntervalSince1970: 1)
 }
