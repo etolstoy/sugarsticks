@@ -15,6 +15,8 @@
 		9FE733BB1E2CDF02000CE7CC /* RealmFixtureCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE733BA1E2CDF02000CE7CC /* RealmFixtureCreator.swift */; };
 		9FE733BF1E2CE208000CE7CC /* SugarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE733BE1E2CE208000CE7CC /* SugarListViewController.swift */; };
 		9FE733C11E2CE367000CE7CC /* SugarInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE733C01E2CE367000CE7CC /* SugarInfoTableViewCell.swift */; };
+		9FE733CE1E2D4FA6000CE7CC /* SugarCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE733CD1E2D4FA6000CE7CC /* SugarCollectionViewController.swift */; };
+		9FE733D01E2D5020000CE7CC /* SugarPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE733CF1E2D5020000CE7CC /* SugarPhotoCollectionViewCell.swift */; };
 		A2BA5D87D26EB92AFD62BA2E /* Pods_sugarsticks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F733D13767D20A57B4ACB /* Pods_sugarsticks.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		9FE733BA1E2CDF02000CE7CC /* RealmFixtureCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmFixtureCreator.swift; sourceTree = "<group>"; };
 		9FE733BE1E2CE208000CE7CC /* SugarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SugarListViewController.swift; sourceTree = "<group>"; };
 		9FE733C01E2CE367000CE7CC /* SugarInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SugarInfoTableViewCell.swift; sourceTree = "<group>"; };
+		9FE733CD1E2D4FA6000CE7CC /* SugarCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SugarCollectionViewController.swift; sourceTree = "<group>"; };
+		9FE733CF1E2D5020000CE7CC /* SugarPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SugarPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		B73F733D13767D20A57B4ACB /* Pods_sugarsticks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sugarsticks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E385E8DC0469FC9DA0D9CDCC /* Pods-sugarsticks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sugarsticks.release.xcconfig"; path = "Pods/Target Support Files/Pods-sugarsticks/Pods-sugarsticks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +143,7 @@
 		9FE733BC1E2CE1F3000CE7CC /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9FE733CC1E2D4F97000CE7CC /* SugarCollectionModule */,
 				9FE733BD1E2CE1F3000CE7CC /* SugarListModule */,
 			);
 			path = PresentationLayer;
@@ -166,6 +171,15 @@
 			children = (
 			);
 			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		9FE733CC1E2D4F97000CE7CC /* SugarCollectionModule */ = {
+			isa = PBXGroup;
+			children = (
+				9FE733CD1E2D4FA6000CE7CC /* SugarCollectionViewController.swift */,
+				9FE733CF1E2D5020000CE7CC /* SugarPhotoCollectionViewCell.swift */,
+			);
+			path = SugarCollectionModule;
 			sourceTree = "<group>";
 		};
 		D0FDB899EF9B0919C094CD6A /* Pods */ = {
@@ -302,10 +316,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE733BB1E2CDF02000CE7CC /* RealmFixtureCreator.swift in Sources */,
+				9FE733CE1E2D4FA6000CE7CC /* SugarCollectionViewController.swift in Sources */,
 				9FE733BF1E2CE208000CE7CC /* SugarListViewController.swift in Sources */,
 				9FE733B91E2CDEF9000CE7CC /* AppDelegate.swift in Sources */,
 				9FE733C11E2CE367000CE7CC /* SugarInfoTableViewCell.swift in Sources */,
 				9FE733B31E2CD0D2000CE7CC /* Sugar.swift in Sources */,
+				9FE733D01E2D5020000CE7CC /* SugarPhotoCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
