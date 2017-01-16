@@ -12,5 +12,5 @@ class Sugar: Object {
     dynamic var name = ""
     dynamic var country = ""
     dynamic var donator = ""
-    dynamic var collectedAt = NSDate(timeIntervalSince1970: 1)
+    dynamic var collectedAt = Date(timeIntervalSince1970: 1)
 }
