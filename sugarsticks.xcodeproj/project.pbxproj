@@ -10,11 +10,8 @@
 		9F4BF0C11DF747A000FD4CD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BF0C01DF747A000FD4CD6 /* AppDelegate.swift */; };
 		9F4BF0C31DF747A000FD4CD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BF0C21DF747A000FD4CD6 /* ViewController.swift */; };
 		9F4BF0C61DF747A000FD4CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BF0C41DF747A000FD4CD6 /* Main.storyboard */; };
-		9F4BF0C91DF747A000FD4CD6 /* sugarsticks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BF0C71DF747A000FD4CD6 /* sugarsticks.xcdatamodeld */; };
 		9F4BF0CB1DF747A000FD4CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BF0CA1DF747A000FD4CD6 /* Assets.xcassets */; };
 		9F4BF0CE1DF747A000FD4CD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BF0CC1DF747A000FD4CD6 /* LaunchScreen.storyboard */; };
-		9FA902791DF7486800AD71BC /* Sugar+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA902771DF7486800AD71BC /* Sugar+CoreDataClass.swift */; };
-		9FA9027A1DF7486800AD71BC /* Sugar+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA902781DF7486800AD71BC /* Sugar+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +19,9 @@
 		9F4BF0C01DF747A000FD4CD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F4BF0C21DF747A000FD4CD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F4BF0C51DF747A000FD4CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9F4BF0C81DF747A000FD4CD6 /* sugarsticks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sugarsticks.xcdatamodel; sourceTree = "<group>"; };
 		9F4BF0CA1DF747A000FD4CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4BF0CD1DF747A000FD4CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4BF0CF1DF747A000FD4CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FA902771DF7486800AD71BC /* Sugar+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sugar+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9FA902781DF7486800AD71BC /* Sugar+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sugar+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +54,12 @@
 		9F4BF0BF1DF747A000FD4CD6 /* sugarsticks */ = {
 			isa = PBXGroup;
 			children = (
-				9FA902771DF7486800AD71BC /* Sugar+CoreDataClass.swift */,
-				9FA902781DF7486800AD71BC /* Sugar+CoreDataProperties.swift */,
 				9F4BF0C01DF747A000FD4CD6 /* AppDelegate.swift */,
 				9F4BF0C21DF747A000FD4CD6 /* ViewController.swift */,
 				9F4BF0C41DF747A000FD4CD6 /* Main.storyboard */,
 				9F4BF0CA1DF747A000FD4CD6 /* Assets.xcassets */,
 				9F4BF0CC1DF747A000FD4CD6 /* LaunchScreen.storyboard */,
 				9F4BF0CF1DF747A000FD4CD6 /* Info.plist */,
-				9F4BF0C71DF747A000FD4CD6 /* sugarsticks.xcdatamodeld */,
 			);
 			path = sugarsticks;
 			sourceTree = "<group>";
@@ -148,9 +139,6 @@
 			files = (
 				9F4BF0C31DF747A000FD4CD6 /* ViewController.swift in Sources */,
 				9F4BF0C11DF747A000FD4CD6 /* AppDelegate.swift in Sources */,
-				9FA902791DF7486800AD71BC /* Sugar+CoreDataClass.swift in Sources */,
-				9F4BF0C91DF747A000FD4CD6 /* sugarsticks.xcdatamodeld in Sources */,
-				9FA9027A1DF7486800AD71BC /* Sugar+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,19 +303,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9F4BF0C71DF747A000FD4CD6 /* sugarsticks.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9F4BF0C81DF747A000FD4CD6 /* sugarsticks.xcdatamodel */,
-			);
-			currentVersion = 9F4BF0C81DF747A000FD4CD6 /* sugarsticks.xcdatamodel */;
-			path = sugarsticks.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9F4BF0B51DF747A000FD4CD6 /* Project object */;
 }
