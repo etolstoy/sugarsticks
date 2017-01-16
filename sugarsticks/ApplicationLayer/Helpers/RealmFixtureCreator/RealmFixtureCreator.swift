@@ -13,11 +13,11 @@ class RealmFixtureCreator: Object {
     let sugarNames = ["McDonalds", "KFC", "Аэрофлот", "Трансаэро", "Теремок 1", "Теремок 2"]
     let sugarCountries = ["Россия", "США", "Германия", "Польша", "Эстония", "Чехия"]
     let donators = ["Егор", "Дмитрий", "Владимир"]
-    let images = ["csr", "davidoff", "kenco", "nescafe"]
+    let images = ["1", "2", "3", "4", "5", "6", "7"]
     
     func prefillRealm() {
         let realm = try! Realm()
-        for _ in 1...20 {
+        for _ in 1...100 {
             let sugar = generateRandomSugar()
             try! realm.write {
                 realm.add(sugar)
