@@ -12,9 +12,11 @@
 		9F4BF0C61DF747A000FD4CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BF0C41DF747A000FD4CD6 /* Main.storyboard */; };
 		9F4BF0CB1DF747A000FD4CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BF0CA1DF747A000FD4CD6 /* Assets.xcassets */; };
 		9F4BF0CE1DF747A000FD4CD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BF0CC1DF747A000FD4CD6 /* LaunchScreen.storyboard */; };
+		A2BA5D87D26EB92AFD62BA2E /* Pods_sugarsticks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F733D13767D20A57B4ACB /* Pods_sugarsticks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		405FEA6CC2FCB2D1CC5FA801 /* Pods-sugarsticks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sugarsticks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sugarsticks/Pods-sugarsticks.debug.xcconfig"; sourceTree = "<group>"; };
 		9F4BF0BD1DF747A000FD4CD6 /* sugarsticks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sugarsticks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4BF0C01DF747A000FD4CD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F4BF0C21DF747A000FD4CD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		9F4BF0CA1DF747A000FD4CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4BF0CD1DF747A000FD4CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4BF0CF1DF747A000FD4CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B73F733D13767D20A57B4ACB /* Pods_sugarsticks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sugarsticks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E385E8DC0469FC9DA0D9CDCC /* Pods-sugarsticks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sugarsticks.release.xcconfig"; path = "Pods/Target Support Files/Pods-sugarsticks/Pods-sugarsticks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2BA5D87D26EB92AFD62BA2E /* Pods_sugarsticks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84544A4672CFD4750693C322 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B73F733D13767D20A57B4ACB /* Pods_sugarsticks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F4BF0B41DF747A000FD4CD6 = {
 			isa = PBXGroup;
 			children = (
 				9F4BF0BF1DF747A000FD4CD6 /* sugarsticks */,
 				9F4BF0BE1DF747A000FD4CD6 /* Products */,
+				D0FDB899EF9B0919C094CD6A /* Pods */,
+				84544A4672CFD4750693C322 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = sugarsticks;
 			sourceTree = "<group>";
 		};
+		D0FDB899EF9B0919C094CD6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				405FEA6CC2FCB2D1CC5FA801 /* Pods-sugarsticks.debug.xcconfig */,
+				E385E8DC0469FC9DA0D9CDCC /* Pods-sugarsticks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F4BF0D21DF747A000FD4CD6 /* Build configuration list for PBXNativeTarget "sugarsticks" */;
 			buildPhases = (
+				159C884A1F44B9A33E325A61 /* [CP] Check Pods Manifest.lock */,
 				9F4BF0B91DF747A000FD4CD6 /* Sources */,
 				9F4BF0BA1DF747A000FD4CD6 /* Frameworks */,
 				9F4BF0BB1DF747A000FD4CD6 /* Resources */,
+				69C628449EC6FFE1A5A2FEBD /* [CP] Embed Pods Frameworks */,
+				907ACF5CDD7369B4A6DF125A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		159C884A1F44B9A33E325A61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69C628449EC6FFE1A5A2FEBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sugarsticks/Pods-sugarsticks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		907ACF5CDD7369B4A6DF125A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sugarsticks/Pods-sugarsticks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F4BF0B91DF747A000FD4CD6 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		9F4BF0D31DF747A000FD4CD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 405FEA6CC2FCB2D1CC5FA801 /* Pods-sugarsticks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4X3E7G4N3S;
@@ -270,6 +346,7 @@
 		};
 		9F4BF0D41DF747A000FD4CD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E385E8DC0469FC9DA0D9CDCC /* Pods-sugarsticks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4X3E7G4N3S;
